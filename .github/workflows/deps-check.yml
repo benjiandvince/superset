@@ -1,0 +1,17 @@
+name: Dependency check
+on:
+  pull_request:
+    paths:
+      - 'requirements/**'
+      - 'pyproject.toml'
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install uv
+      - run: uv pip install -r requirements/base.txt --dry-run
