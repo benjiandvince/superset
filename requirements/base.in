@@ -16,6 +16,8 @@
 # specific language governing permissions and limitations
 # under the License.
 #
+# Security: CVE-2026-37000 - bump celery floor to exclude vulnerable <5.5.3
+celery>=5.5.3
 # Security: CVE-2026-21441 - decompression bomb bypass on redirects
 urllib3>=2.6.3,<3.0.0
 # Security: CVE-2026-27199 - Windows device name handling in safe_join
