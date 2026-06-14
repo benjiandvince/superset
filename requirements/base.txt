@@ -48,7 +48,7 @@ cachetools==6.2.1
     # via google-auth
 cattrs==25.1.1
     # via requests-cache
-celery==5.5.2
+celery==5.5.3
     # via apache-superset (pyproject.toml)
 certifi==2026.5.20
     # via
