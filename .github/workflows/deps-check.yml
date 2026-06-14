@@ -14,4 +14,4 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install uv
-      - run: uv pip install -r requirements/base.txt --dry-run
+      - run: uv pip install -r requirements/base.txt --dry-run --system
