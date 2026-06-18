@@ -33,8 +33,8 @@ mako>=1.3.11,<2.0.0
 pyarrow>=24.0.0,<25.0.0
 # Security: CVE-2026-27459 - pyopenssl certificate validation
 pyopenssl>=26.0.0,<27.0.0
-# Security: CVE-2026-25645 (MEDIUM) - Insecure Temporary File
-requests>=2.33.0,<3.0.0
+# Security: CVE-2026-35001 - Uncontrolled resource consumption via incomplete read of chunked transfer-encoded responses
+requests>=2.33.1,<3.0.0
 
 # 5.0.0 has a sensitive deprecation used in other libs
 # -> https://github.com/aio-libs/async-timeout/blob/master/CHANGES.rst#500-2024-10-31
